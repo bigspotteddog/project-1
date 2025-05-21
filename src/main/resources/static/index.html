@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Donuts - Coming Soon!</title>
+    <!-- Bootstrap 5.3 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #FFF8E1;
+            font-family: 'Roboto', sans-serif;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1551024601-bec78aea704b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+        }
+        .countdown {
+            background-color: #FF85A2;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .form-section {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .footer {
+            background-color: #3D2C2E;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Delicious Donuts</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu Preview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-1 fw-bold mb-4">Delicious Donuts</h1>
+            <h2 class="display-6 mb-5">Handcrafted with love, coming to your neighborhood soon!</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="countdown mb-4">
+                        <h3>Grand Opening In</h3>
+                        <div class="row">
+                            <div class="col">
+                                <h2>30</h2>
+                                <p>Days</p>
+                            </div>
+                            <div class="col">
+                                <h2>12</h2>
+                                <p>Hours</p>
+                            </div>
+                            <div class="col">
+                                <h2>45</h2>
+                                <p>Minutes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#signup" class="btn btn-warning btn-lg">Get Notified</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="display-4 mb-4">About Our Shop</h2>
+                    <p class="lead">Delicious Donuts is a family-owned bakery dedicated to creating the most delightful donuts in town. Our recipes have been perfected over generations, combining traditional techniques with innovative flavors.</p>
+                    <p>Each donut is handcrafted daily using only the finest ingredients. We believe in quality over quantity and take pride in every donut we make.</p>
+                    <div class="d-flex mt-4">
+                        <div class="me-4">
+                            <h4>20+</h4>
+                            <p>Unique Flavors</p>
+                        </div>
+                        <div class="me-4">
+                            <h4>100%</h4>
+                            <p>Fresh Daily</p>
+                        </div>
+                        <div>
+                            <h4>Local</h4>
+                            <p>Ingredients</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Preview -->
+    <section id="menu" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="display-4 text-center mb-5">Menu Preview</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Classic Glazed">
+                        <div class="card-body">
+                            <h5 class="card-title">Classic Glazed</h5>
+                            <p class="card-text">Our signature donut with a perfect sweet glaze that melts in your mouth.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1527904324834-3bda86da6771?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Chocolate Dream">
+                        <div class="card-body">
+                            <h5 class="card-title">Chocolate Dream</h5>
+                            <p class="card-text">Rich chocolate donut topped with chocolate ganache and chocolate sprinkles.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1556913396-7a3c459ef68e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Berry Blast">
+                        <div class="card-body">
+                            <h5 class="card-title">Berry Blast</h5>
+                            <p class="card-text">Light and fluffy donut filled with mixed berry jam and topped with a berry glaze.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <p class="lead">And many more flavors to discover on our grand opening!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sign Up Form -->
+    <section id="signup" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="form-section">
+                        <h2 class="text-center mb-4">Stay Updated</h2>
+                        <p class="text-center mb-4">Sign up to receive updates about our grand opening, special offers, and exclusive events!</p>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="firstName" class="form-label">First Name</label>
+                                    <input type="text" class="form-control" id="firstName" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="lastName" class="form-label">Last Name</label>
+                                    <input type="text" class="form-control" id="lastName" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="phone" class="form-label">Phone Number (Optional)</label>
+                                    <input type="tel" class="form-control" id="phone">
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
+                                            I'd like to receive text message updates
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg">Keep Me Updated</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="mb-4">Contact Us</h2>
+                    <p>Have questions about our grand opening? Want to inquire about catering or special orders? Reach out to us!</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-geo-alt"></i> 123 Donut Street, Sweetville, CA 90210</li>
+                        <li class="mb-2"><i class="bi bi-telephone"></i> (555) 123-4567</li>
+                        <li class="mb-2"><i class="bi bi-envelope"></i> info@deliciousdonuts.com</li>
+                    </ul>
+                    <div class="mt-4">
+                        <a href="#" class="me-3 text-dark"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#" class="me-3 text-dark"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="me-3 text-dark"><i class="bi bi-twitter fs-4"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="ratio ratio-4x3">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.7152203627526!2d-118.24368384857908!3d34.05293252525287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c648fa1d4803%3A0xddf0ed2b634717d6!2sGrand%20Central%20Market!5e0!3m2!1sen!2sus!4v1653060799574!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 Delicious Donuts. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white me-3">Privacy Policy</a>
+                    <a href="#" class="text-white">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</body>
+</html>
