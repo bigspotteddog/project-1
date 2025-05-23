@@ -336,8 +336,39 @@
         // Form submission
         document.getElementById('interest-form').addEventListener('submit', function(e) {
             e.preventDefault();
-            alert('Thank you for your interest! We will keep you updated on our grand opening.');
-            this.reset();
+            
+            // Collect form data
+            const formData = {
+                firstName: document.getElementById('firstName').value,
+                lastName: document.getElementById('lastName').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                emailUpdates: document.getElementById('emailUpdates').checked,
+                smsUpdates: document.getElementById('smsUpdates').checked
+            };
+            
+            // Send data to server using fetch API
+            fetch('/api/interest-list', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                alert('Thank you for your interest! We will keep you updated on our grand opening.');
+                this.reset();
+            })
+            .catch(error => {
+                console.error('Error submitting form:', error);
+                alert('There was a problem submitting your information. Please try again later.');
+            });
         });
     </script>
 </body>
