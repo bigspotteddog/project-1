@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Donuts - Coming Soon!</title>
+    <!-- Bootstrap 5.3 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1551024601-bec78aea704b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+        }
+        .feature-icon {
+            font-size: 3rem;
+            color: #ff6b6b;
+        }
+        .form-section {
+            background-color: #f8f9fa;
+            padding: 60px 0;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 30px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Delicious Donuts</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu Preview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Stay Updated</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-4">Delicious Donuts</h1>
+            <h2 class="display-6 mb-5">Opening Soon in Your Neighborhood!</h2>
+            <p class="lead mb-5">Get ready for the freshest, most delicious donuts in town. Handcrafted with love every morning.</p>
+            <a href="#contact" class="btn btn-primary btn-lg">Get Notified When We Open</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="mb-4">Our Donut Story</h2>
+                    <p class="lead">At Delicious Donuts, we believe that the perfect donut is a work of art. Our journey began with a simple passion for creating the most delightful treats that bring joy to everyone.</p>
+                    <p>Each donut is handcrafted using traditional recipes passed down through generations, combined with innovative flavors that will surprise and delight your taste buds. We use only the finest ingredients, sourced locally whenever possible.</p>
+                    <p>Our shop is designed to be a warm, welcoming space where the community can gather, connect, and enjoy life's sweet moments together.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row g-4">
+                        <div class="col-md-6 text-center">
+                            <div class="feature-icon mb-3">
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <h4>Premium Quality</h4>
+                            <p>Only the finest ingredients make it into our donuts.</p>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <div class="feature-icon mb-3">
+                                <i class="bi bi-heart-fill"></i>
+                            </div>
+                            <h4>Made with Love</h4>
+                            <p>Every donut is crafted with care and attention.</p>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <div class="feature-icon mb-3">
+                                <i class="bi bi-cup-hot-fill"></i>
+                            </div>
+                            <h4>Perfect Pairings</h4>
+                            <p>Artisanal coffee to complement your treats.</p>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <div class="feature-icon mb-3">
+                                <i class="bi bi-geo-alt-fill"></i>
+                            </div>
+                            <h4>Local Focus</h4>
+                            <p>Supporting local suppliers and our community.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Preview Section -->
+    <section id="menu" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Menu Preview</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Classic Collection</h4>
+                            <p class="card-text">Our take on the timeless favorites that everyone loves. From glazed to chocolate frosted, these donuts are perfection in simplicity.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Gourmet Creations</h4>
+                            <p class="card-text">Unique flavor combinations that push the boundaries of what a donut can be. Try our maple bacon or lavender honey varieties.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Seasonal Specials</h4>
+                            <p class="card-text">Limited-time offerings that celebrate the flavors of each season. Our pumpkin spice and peppermint donuts are worth the wait!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="form-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow">
+                        <div class="card-body p-5">
+                            <h2 class="text-center mb-4">Stay Updated on Our Opening</h2>
+                            <p class="text-center mb-5">Sign up to receive updates about our grand opening, special offers, and events. Be the first to know when we open our doors!</p>
+                            <form id="interestForm">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="firstName" class="form-label">First Name</label>
+                                        <input type="text" class="form-control" id="firstName" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="lastName" class="form-label">Last Name</label>
+                                        <input type="text" class="form-control" id="lastName" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="email" class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="phone" class="form-label">Phone Number (Optional)</label>
+                                        <input type="tel" class="form-control" id="phone">
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="emailUpdates" checked>
+                                            <label class="form-check-label" for="emailUpdates">
+                                                I'd like to receive email updates about the opening and special offers
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="smsUpdates">
+                                            <label class="form-check-label" for="smsUpdates">
+                                                I'd like to receive text message updates (standard rates may apply)
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-4">
+                                        <button type="submit" class="btn btn-primary w-100 py-3">Keep Me Updated</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Location</h5>
+                    <p>123 Donut Street<br>Sweetville, NY 12345</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Connect With Us</h5>
+                    <div class="d-flex justify-content-center gap-3 fs-4">
+                        <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Opening Hours</h5>
+                    <p>Coming Soon!<br>Mon-Sun: 6:00 AM - 8:00 PM</p>
+                </div>
+            </div>
+            <div class="mt-4">
+                <p class="mb-0">&copy; 2025 Delicious Donuts. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+    <!-- Bootstrap 5.3 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
+    <!-- Form Submission Script -->
+    <script>
+        document.getElementById('interestForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you for your interest! We\'ll keep you updated on our grand opening.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
