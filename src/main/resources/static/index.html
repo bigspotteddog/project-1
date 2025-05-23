@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Donuts - Coming Soon!</title>
+    <!-- Bootstrap 5.3 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #FFF8E1;
+            font-family: 'Roboto', sans-serif;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1556913396-7a3c459ef68e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+        }
+        .countdown {
+            background-color: #FF9800;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .form-section {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .donut-icon {
+            font-size: 2rem;
+            color: #FF5722;
+        }
+        .feature-box {
+            padding: 20px;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            height: 100%;
+            transition: transform 0.3s;
+        }
+        .feature-box:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">🍩 Delicious Donuts</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu Preview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Stay Updated</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-2 fw-bold mb-4">Delicious Donuts</h1>
+            <h2 class="display-6 mb-5">Bringing Sweet Happiness to Your Neighborhood</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="countdown mb-4">
+                        <h3>Opening Soon!</h3>
+                        <p class="lead mb-0">We're putting the finishing touches on our shop. Get ready for donut paradise!</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#contact" class="btn btn-primary btn-lg mt-3">Get Notified When We Open</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-5" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4">About Our Donut Shop</h2>
+                    <p class="lead">At Delicious Donuts, we're passionate about creating the most mouthwatering, handcrafted donuts you've ever tasted.</p>
+                    <p>Our recipes have been perfected over generations, combining traditional techniques with innovative flavors. Every donut is made fresh daily using only the finest ingredients, ensuring a delightful experience with every bite.</p>
+                    <p>We can't wait to become your favorite local donut destination!</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="feature-box">
+                                <div class="donut-icon mb-3">🍩</div>
+                                <h4>Handcrafted</h4>
+                                <p>Each donut is lovingly made by our expert bakers.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature-box">
+                                <div class="donut-icon mb-3">🌿</div>
+                                <h4>Quality Ingredients</h4>
+                                <p>We use only premium, locally-sourced ingredients.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature-box">
+                                <div class="donut-icon mb-3">☕</div>
+                                <h4>Specialty Coffee</h4>
+                                <p>Perfectly paired coffee to complement your treats.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature-box">
+                                <div class="donut-icon mb-3">🥛</div>
+                                <h4>Dietary Options</h4>
+                                <p>Vegan and gluten-free options available.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Preview Section -->
+    <section class="py-5 bg-light" id="menu">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Menu Preview</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Classic Favorites</h3>
+                            <p class="card-text">Glazed, Chocolate, Vanilla, Strawberry, and more!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Gourmet Creations</h3>
+                            <p class="card-text">Maple Bacon, Salted Caramel, Matcha Green Tea, and more!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Seasonal Specials</h3>
+                            <p class="card-text">Rotating seasonal flavors using fresh local ingredients!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-5" id="contact">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="form-section">
+                        <h2 class="text-center fw-bold mb-4">Stay Updated</h2>
+                        <p class="text-center mb-4">Sign up to receive updates about our grand opening, special promotions, and more!</p>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="firstName" class="form-label">First Name</label>
+                                    <input type="text" class="form-control" id="firstName" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="lastName" class="form-label">Last Name</label>
+                                    <input type="text" class="form-control" id="lastName" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="phone" class="form-label">Phone Number (Optional)</label>
+                                    <input type="tel" class="form-control" id="phone">
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="specialOffers" checked>
+                                        <label class="form-check-label" for="specialOffers">
+                                            I'd like to receive special offers and promotions
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg">Keep Me Updated</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Delicious Donuts</h5>
+                    <p>123 Donut Street<br>Sweetville, NY 10001</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>Follow us on social media:</p>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i> Facebook</a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i> Instagram</a>
+                        <a href="#" class="text-white"><i class="bi bi-twitter"></i> Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2025 Delicious Donuts. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
