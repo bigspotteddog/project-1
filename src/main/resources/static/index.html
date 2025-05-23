@@ -199,14 +199,45 @@
     <!-- Bootstrap 5.3 JS Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     
-    <!-- Form submission script -->
+    <!-- Form submission script with Fetch API -->
     <script>
         document.getElementById('interestForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            // Show the thank you modal instead of alert
-            const thankYouModal = new bootstrap.Modal(document.getElementById('thankYouModal'));
-            thankYouModal.show();
-            this.reset();
+            
+            // Collect form data
+            const formData = {
+                firstName: document.getElementById('firstName').value,
+                lastName: document.getElementById('lastName').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                specialOffers: document.getElementById('specialOffers').checked
+            };
+            
+            // Send data to server using Fetch API
+            fetch('/api/interest', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('Success:', data);
+                // Show the thank you modal
+                const thankYouModal = new bootstrap.Modal(document.getElementById('thankYouModal'));
+                thankYouModal.show();
+                this.reset();
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('There was a problem submitting your information. Please try again later.');
+            });
         });
     </script>
 </body>
